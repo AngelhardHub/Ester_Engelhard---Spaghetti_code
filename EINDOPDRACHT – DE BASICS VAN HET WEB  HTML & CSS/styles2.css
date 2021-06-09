@@ -1,0 +1,117 @@
+/* Adjustment on GRID default styling, default styling in styles.css */
+
+.Gridcontainer{
+    display: grid;
+    height: auto;
+    grid-template-columns: 50px 1fr 300px 50px;
+    grid-template-rows: 200px 50px 1fr 175px;
+    grid-template-areas: 
+    " . header header ."
+    " . nav nav ."
+    " . main main ."
+    " . footer footer ."
+    ;
+}
+
+/* styling for form container, basic/ default styling in styles.css */
+
+main{
+    display: flex;
+    align-items: center;
+    border: 5px solid #572700;
+    border-bottom: none;
+}
+
+.form_main_text{
+    margin: 5%;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-image: linear-gradient( #FFC900,#faefc4,#FFDE5D);
+    border: brown solid 2px;
+    margin: 5%;
+    padding-left: 5px;
+    height: auto;   
+}
+
+input,
+textarea{
+    color: #572700;
+    margin: 6px;
+}
+::placeholder, 
+textarea{
+    color: #f5c104
+}
+
+.form_name > h3,
+.form_birthday > h3,
+.form_contactgegevens > h3{
+    margin-bottom: 0;
+    margin-left: 6px;
+}
+
+.form_type_developer > p{
+    margin: 0;
+}
+
+h3,
+h4{
+   margin-bottom: 0;
+   margin-left: 6px;
+}
+
+.boek_1 > p,
+.boek_2 > p,
+.boek_3 > p{
+   margin: 0;
+   margin-left: 6px;
+}
+
+.input_title{
+    width: 337px;
+}
+
+.action_button{
+   text-align: center;
+   width: 90%;
+}
+/* Adjustment on footer default styling, default styling in styles.css */
+.overzicht > ul > li,
+.contact > ul > li,
+.about > ul > li{
+    padding-left: 6px;
+}
+
+
+@media screen and (min-width: 1000px){
+   
+
+    form{
+        width: 1000px;
+    }
+    
+    .form_name > input,
+    .form_birthday > input,
+    .form_contactgegevens > input,
+    .input_auteur{
+        width: 40%;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .input_title{
+        font-size: 20px;
+        width: 83%;
+        height: 30px;
+    }
+   
+    .tipsentricks {
+     width: 83%;
+}
+    
+}
