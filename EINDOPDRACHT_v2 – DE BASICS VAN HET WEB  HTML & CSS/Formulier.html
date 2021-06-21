@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="Resources\CSS/main.css">
+        <link rel="stylesheet" type="text/css" href="Resources\CSS/Formulier.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaghetti code</title>
+</head>
+<body>
+    <div class="grid_container">
+        <header class="header">
+            <div class="flex_title">
+                <h1>Spaghetti code</h1>
+                <h3>Bereiden wat je er van breien kan</h3>
+            </div>
+        </header>        
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pasta_theory.html">Pasta theorie</a></li>
+                <li><a href="Tips&Tricks.html">Tips & tricks</a></li>
+            </ul>
+        </nav>  
+        <main class="main">
+            <div class="form_main_text">
+                <h2>Tips & tricks</h2>
+                <p>Hoe transformeer je een chaotische bord spaghetti naar een overzichtelijk bordje ravioli? 
+                Ik hoor graag welke ingredienten jij hiervoor op de plank hebt staan!</p>
+            </div>
+            <form name="tips_form_spaghetticode" method="POST" data-netlify="TRUE">
+                <div class="form_name">
+                    <h3>Naam:</h3>
+                    <input type="text" name="voornaam" placeholder="naam">
+                    <input type="text" name="achternaam" placeholder="achternaam">
+                </div>  
+                <div class="form_birthday">
+                    <h3>Geboortedatum:</h3>
+                    <input type="date" name="geboortedatum" placeholder="geboortedatum">
+                </div>
+                <div class="form_contactgegevens">
+                    <h3>Contactgegevens:</h3>
+                    <input type="email" namee="email" placeholder="email"> <br>
+                    <input type="tel" namee="telefoonnummer" placeholder="telefoonnummer">
+                </div>
+                <div class="form_type_developer">
+                   <h3>Relatie tot programmeren:</h3>
+                    <p><input type="radio" name="type_programmeur">Ik werk als programmeur</p>
+                    <p><input type="radio" name="type_programmeur">Ik programmeer graag in mijn vrije tijd</p>
+                    <p><input type="radio" name="type_programmeur">Ik ben aan het leren programmeren</p>
+                </div>  
+                <div class="form_literature">
+                    <h3>Studieboeken tips:</h3>
+                    <div class="boek_1">
+                        <h4>Boek 1</h4>
+                        <p>Auteur:</p>
+                        <input class="input_auteur" type="text" name="naam auteur1" placeholder="naam">
+                        <input class="input_auteur" type="text" name="achternaam auteu1r" placeholder="achternaam">
+                        <p>Titel:</p> 
+                        <input class="input_title" type="text" name="titel1">
+                    </div>                       
+                    <div class="boek_2">
+                        <h4>Boek 2</h4>
+                        <p>Auteur:</p>
+                        <input class="input_auteur" type="text" name="naam auteur1" placeholder="naam">
+                        <input class="input_auteur" type="text" name="achternaam auteu1r" placeholder="achternaam">
+                        <p>Titel:</p> 
+                        <input class="input_title" type="text" name="titel2">
+                    </div>  
+                    <div class="boek_3">
+                        <h4>Boek 3</h4>
+                        <p>Auteur:</p>
+                        <input class="input_auteur" type="text" name="naam auteur3" placeholder="naam">
+                        <input class="input_auteur" type="text" name="achternaam auteu1r" placeholder="achternaam">
+                        <p>Titel:</p> 
+                        <input class="input_title" type="text" name="titel1">
+                    </div>                                        
+                    <h3>Homemade tips & tricks:</h3>
+                    <textarea class="tipsentricks" name="tipsentricks" >Heb je zelf een tip of een trick? Laat deze dan hier achter of upload jouw bestand hieronder.</textarea>                      
+                    <div class="upload">
+                        <h3> Upload tips/ebook:<br><input type="file"></h3>
+                    </div> 
+                    <div class="action_button">
+                        <input type="reset">
+                        <input type="submit">
+                    </div>
+                </div>
+            </form>        
+        </main>      
+        <footer class="footer">
+            <div class="footer_flex">
+                <div class="overzicht">
+                    <h4>Overzicht</h4>
+                    <ul >
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Pasta_theory.html">Pasta theorie</a></li>
+                        <li><a href="Tips&Tricks.html">Tips & tricks</a></li>
+                    </ul>
+                </div>  
+                <div class="contact">
+                    <h4>Contact</h4>
+                    <ul >
+                        <li><a href="Formulier.html">Tips formulier</a></li>
+                    </ul>
+                </div>  
+            </div>
+            <p class="disclaimer">Disclaimer: Pagina inhoud is het resultaat van mijn zoektocht en grotendeels gebaseerd op mijn interpretie van andermans waarheid en daarmee niet bedoeld als feitelijke informatie voorziening.</p>
+        </footer>
+    </div>
+</body>
+</html>

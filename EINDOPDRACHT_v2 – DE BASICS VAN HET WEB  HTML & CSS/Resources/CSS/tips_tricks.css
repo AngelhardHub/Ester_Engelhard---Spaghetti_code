@@ -1,0 +1,13 @@
+.tipsandtricks_main_text p {
+    text-align: justify;    
+}
+.tipsandtricks_main_text h2 {
+    text-align: center;    
+}
+
+@media screen and (min-width: 1024px) {
+    .main{
+    min-height: 600px;
+    }
+    
+}

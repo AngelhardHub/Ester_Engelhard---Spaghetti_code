@@ -1,0 +1,83 @@
+.Pasta_theory_main_text > h2 {
+    text-align: center;
+}
+.Pasta_theory_main_text > p {
+    text-align: justify;
+    font-size: 15px;
+}
+.pasta_theory_main_flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pasta_theory_tile1,
+.pasta_theory_tile2,
+.pasta_theory_tile3,
+.pasta_theory_tile4 {
+    border: linear-gradient(#ca9f03,#f8d030)solid 10px;
+    text-align: center;
+    background-image: linear-gradient(#FFC900,#fdf3d0);
+    width: 115px;
+    margin: 5px;
+}
+.main_img_1,
+.main_img_2,
+.main_img_3,
+.main_img_4 {
+    width: 115px; 
+    height: auto;  
+}
+.pasta_tile_text_container > p {
+    font-size: 0; 
+}
+.pasta_tile_text_container > h3 {
+    margin: 0;
+}
+@media screen and (min-width: 1024px) {
+     .pasta_theory_main_grid {      
+        grid-template-columns: 1fr 6fr 6fr 1fr;
+        grid-template-rows: 145px 145px 145px 145px;
+        row-gap: 50px;
+        grid-template-areas: 
+        ".a a."
+        ".b b."
+        ".c c."
+        ".d d.";
+    }
+    .Pasta_theory_main_text > p {
+        font-size: 18px;
+    }
+    .visibility{
+        visibility:visible;               
+    }
+    .pasta_tile_text_container > h3 {
+        margin-top:10px;
+        padding: 0;
+        text-align: left;    
+    }
+    .pasta_tile_text_container > p {
+    font-size: 18px; 
+    text-align: justify;
+    margin-left: 10px;
+    margin-right:20px;    
+    }
+    .pasta_theory_tile1,
+    .pasta_theory_tile2,
+    .pasta_theory_tile3,
+    .pasta_theory_tile4 {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+    h3 > a,
+    h3 > a,
+    h3 > a,
+    h3 > a {        
+        margin-left: 50px;
+        padding-top: 2%;
+        cursor: default;
+        pointer-events: none;        
+        text-decoration: none; 
+    }  
+}
+

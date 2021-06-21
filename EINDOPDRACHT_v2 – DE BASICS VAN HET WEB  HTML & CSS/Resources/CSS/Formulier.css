@@ -1,0 +1,101 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #572700;
+    border-bottom: none;
+}
+.form_main_text {
+    margin: 5%;
+    text-align:justify;
+    max-width: 800px;
+}
+.form_main_text h2 {
+    text-align: center;
+}
+.form_main_text p {
+   font-size: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-image: linear-gradient( #FFC900,#faefc4,#FFDE5D);
+    border: solid 1px;
+    margin: 5%;
+    padding-left: 5px;
+    height: auto;  
+    width: 250px; 
+}
+input,
+textarea {
+    color: #572700;
+    margin: 6px;
+}
+::placeholder, 
+textarea {
+    color: #f5c104
+}
+.form_name > h3,
+.form_birthday > h3,
+.form_contactgegevens > h3 {
+    margin-bottom: 0;
+    margin-left: 6px;
+}
+.form_type_developer > p {
+    margin: 0;
+}
+h3,
+h4 {
+   margin-bottom: 0;
+   margin-left: 6px;
+}
+.boek_1 > p,
+.boek_2 > p,
+.boek_3 > p {
+   margin: 0;
+   margin-left: 6px;
+}
+.input_title {
+    width: 157px;
+}
+input[type="file"],
+input[type="reset"],
+input[type="submit"] {    
+    font-size: 12px;
+    margin-left: 0;
+}
+.action_button {
+display: flex;
+justify-content:center;
+}
+@media screen and (min-width: 1000px) {
+    .grid_container {
+        grid-template-areas: 
+        " . header header ."
+        " . nav nav ."
+        " . main main ."
+        " . . . ."
+        " . footer footer ."
+        ;    
+    }
+    .form_main_text {
+    font-size: 15px;
+    }
+    .form_main_text p {
+        font-size: 18px;
+    }
+     form{
+        width: 800px;
+    }
+    .action_button {
+        margin-left: 6px;
+        margin-top: 20px;
+        justify-content: flex-start;        
+    } 
+}  
+ 
+
+
+
+
